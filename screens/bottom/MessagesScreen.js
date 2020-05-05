@@ -1,15 +1,15 @@
 import React from 'react';
 import { View, Text, Button, StyleSheet } from 'react-native';
 
-const HomeScreen = ({navigation}) => {
+const MessagesScreen = () => {
     return (
       <View style={styles.container}>
-        <Text>Home Screen</Text>
+        <Text>Messages Screen</Text>
       </View>
     );
 };
 
-export default HomeScreen;
+export default MessagesScreen;
 
 const styles = StyleSheet.create({
   container: {
