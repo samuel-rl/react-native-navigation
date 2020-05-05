@@ -7,19 +7,23 @@ import IconFeather from "react-native-vector-icons/Feather";
 import HomeScreen from "./drawer/HomeScreen";
 import MessageScreen from "./bottom/MessagesScreen";
 import AddScreen from "./bottom/AddScreen";
+import { useTheme } from "@react-navigation/native";
 
 const HomeStack = createStackNavigator();
-
 const Tab = createMaterialBottomTabNavigator();
 
-const MainTabScreen = () =>
-    <Tab.Navigator
+
+const MainTabScreen = () => {
+    const { colors } = useTheme();
+
+    return (
+        <Tab.Navigator
         initialRouteName="Home"
         //activeColor="#f0edf6"
-        inactiveColor="#c9c9ff"
+        inactiveColor="#A0A0A0"
         shifting={true}
         labeled={false}
-        barStyle={{ backgroundColor: "#fff" }}
+        barStyle={{ backgroundColor: colors.background }}
     >
         <Tab.Screen
             name="Home"
@@ -44,7 +48,7 @@ const MainTabScreen = () =>
                 tabBarIcon: ({ color, focused }) =>
                     <IconFeather
                         name="plus-square"
-                        color={focused ? "#e1f7d5" : color}
+                        color={focused ? "#c9c9ff" : color}
                         size={26}
                     />
             }}
@@ -63,7 +67,10 @@ const MainTabScreen = () =>
                     />
             }}
         />
-    </Tab.Navigator>;
+    </Tab.Navigator>
+    );
+
+};
 
 export default MainTabScreen;
 
