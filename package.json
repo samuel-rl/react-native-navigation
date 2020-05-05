@@ -8,6 +8,7 @@
     "eject": "expo eject"
   },
   "dependencies": {
+    "@react-native-community/cli": "^4.8.0",
     "@react-native-community/masked-view": "0.1.6",
     "@react-navigation/drawer": "^5.6.3",
     "@react-navigation/material-bottom-tabs": "^5.1.14",
