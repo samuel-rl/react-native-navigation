@@ -15,7 +15,7 @@
     "@react-navigation/native": "^5.7.1",
     "@react-navigation/stack": "^5.7.1",
     "expo": "~38.0.8",
-    "lodash": "4.17.19",
+    "lodash": "4.17.21",
     "mem": "4.0.0",
     "react": "~16.13.1",
     "react-dom": "~16.13.1",
